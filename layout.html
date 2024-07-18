@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas with Fabric.js</title>
+    <style>
+        #canvas-container {
+            position: relative;
+            border: 1px solid black;
+        }
+        .button-container {
+            margin: 10px 0;
+        }
+        #scaleControls {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <input type="file" id="layoutImage" accept="image/*">
+        <button id="defineScale" style="display:none;">Define Scale</button>
+        <div id="scaleControls">
+            <button id="increaseScale">Increase Scale</button>
+            <button id="decreaseScale">Decrease Scale</button>
+        </div>
+        <button id="addProduct" style="display:none;">Add Product</button>
+    </div>
+    <div id="canvas-container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <!-- Load Fabric.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+    <!-- Load custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
